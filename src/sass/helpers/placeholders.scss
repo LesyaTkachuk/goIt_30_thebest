@@ -1,0 +1,34 @@
+%button {
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $primary-white-color;
+  background: $main-orange-color;
+}
+
+%link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+%background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+%pseudo {
+  content: '';
+  display: block;
+}
+
+%pseudo-before {
+  content: '&#91;';
+  display: block;
+}
+
+%pseudo-after {
+  content: '&#93;';
+  display: block;
+}
