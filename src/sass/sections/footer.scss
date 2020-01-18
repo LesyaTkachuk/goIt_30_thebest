@@ -1,0 +1,119 @@
+.footer {
+    @extend %background;
+    min-height: 480px;
+    background-image: url("../images/footer/photoM.jpg");
+    padding-top: 60px;
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .footer {
+      background-image: url("../images/footer/photoM@2x.jpg");
+
+    }
+  }
+
+.footer__link {
+    display: block;
+    @include font-set(20px, 1.2);
+    font-weight: 900;
+    color: $secondary--color-aqua;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 296px;
+   
+
+}
+
+.footer__logotype {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-image: url(../images/footer/LogoF.png);
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.footer__text {
+    @include font-set(14px, 1.2);
+    color: $primary-white-color;
+    text-align: center;
+
+}
+
+
+@media (min-width:768px) {
+
+    .footer__container {
+      width: 620px;
+    }
+
+    .footer {
+        background-image: url(../images/footer/tablet/photo.jpg);
+        padding-top: 90px;
+        min-height: 458px;
+
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .footer {
+          background-image: url("../images/footer/tablet/photo@2x.jpg");
+        }
+    }
+
+    .footer__link {
+        @include font-set(30px, 1.2);
+        margin-bottom: 282px;
+    }
+
+    .footer__div {
+        display: flex;
+    
+    }
+
+    .footer__logotype {
+        margin: 0;
+    }
+
+    .footer__text {
+        padding-left: 12px;
+        @include font-set(18px, 1.8);
+    }
+}
+
+@media (min-width:1200px) {
+        .footer__container {
+          width: 1140px;
+        }
+
+        .footer {
+            background-image: url(../images/footer/decstop/photo.jpg);
+            padding-top: 258px;
+            min-height: 1050px;
+    
+        }
+
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .footer {
+              background-image: url("../images/footer/decstop/photo@2x.jpg");
+            }
+        }
+
+        .footer__link {
+            @include font-set(60px, 1.2);
+            margin-bottom: 638px;
+        }
+
+        .footer__text {
+            padding-left: 12px;
+            @include font-set(25px, 1.2);
+        }
+
+    
+
+}
+      
+
+
+
+ 
