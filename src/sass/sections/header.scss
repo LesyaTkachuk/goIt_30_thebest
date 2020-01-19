@@ -1,4 +1,4 @@
-header {
+.header {
   min-height: 798px;
   background-color: $secondary-dark-color;
   background-image: url(../images/header/Bgheader.png);
@@ -131,12 +131,12 @@ header {
 
 }
 
-@media (min-width: 748px) {
+@media (min-width: 768px) {
   .container_header {
     width: 624px;
   }
 
-  header {
+  .header {
     padding-top: 38px;
     background-image: none;
   }
@@ -228,7 +228,7 @@ header {
 
 @media (min-width: 1200px) {
 
-    header{
+    .header{
 
         background-image: url(../images/header/BgheaderDecstop.png);
         background-position: center;
