@@ -122,6 +122,18 @@
 
 }
 
+.form__input:focus {
+  outline: none;
+}
+
+input:required:focus:valid {
+  outline: 3px solid green;
+}
+
+input:required:focus:invalid {
+  outline: 3px solid red;
+}
+
 .politics {
   @extend %link;
   @include font-set(13px, 1.2);
