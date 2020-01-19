@@ -2,7 +2,7 @@
   min-height: 798px;
   background-color: $secondary-dark-color;
   background-image: url(../images/header/Bgheader.png);
-  padding-top: 26px;
+  padding: 26px 0;
 
 }
 
@@ -62,7 +62,7 @@
   &:hover {
     color: $secondary--color-aqua;
     text-decoration: underline;
-    transition:  400ms linear;
+    transition: 400ms linear;
   }
 
 }
@@ -70,7 +70,7 @@
 .header__form-wrapper {
   min-height: 378px;
   background-color: $primary-white-color;
-  padding: 16px 18px 26px 20px;
+  padding: 16px 20px 26px 20px;
   margin-bottom: 12px;
   box-shadow: 0px 12px 70px 0px rgba(121, 139, 188, 0.48);
 }
@@ -145,7 +145,6 @@ input:required:focus:invalid {
 .politics {
   @extend %link;
   @include font-set(13px, 1.2);
-  margin-bottom: 20px;
   color: rgb(93, 96, 102);
   padding-left: 22px;
 
@@ -167,7 +166,7 @@ input:required:focus:invalid {
 
   .header__text {
     margin-bottom: 34px;
-    
+
 
   }
 
@@ -182,23 +181,26 @@ input:required:focus:invalid {
   .header__title {
     @include font-set(40px, 1.25);
     letter-spacing: -1.9px;
-  
+
   }
+
   .header__main-text {
     @include font-set(18px, 1.444);
     margin-bottom: 26px;
   }
-  .header__meet-text{
+
+  .header__meet-text {
     @include font-set(18px, 1.2);
   }
 
-  .header__adress-text{
+  .header__adress-text {
     @include font-set(40px, 1.2);
     letter-spacing: -1.64px;
   }
-  .contact__wrapper{
-      width: 442px;
-      margin: 0 auto;
+
+  .contact__wrapper {
+    width: 442px;
+    margin: 0 auto;
   }
 
   .header__form-wrapper {
@@ -208,21 +210,21 @@ input:required:focus:invalid {
     margin-bottom: 6px;
   }
 
-  .form__div{
-      margin-bottom: 28px;
+  .form__div {
+    margin-bottom: 28px;
   }
 
 
 
-    .contact__title {
-        @include font-set(24px, 1.167);
-        color: $primary-dark-color;
-        margin-bottom: 18px;
-        text-align: center;
-        width: 370px;
-        margin: 0 auto;
-        margin-bottom: 16px;
-    }
+  .contact__title {
+    @include font-set(24px, 1.167);
+    color: $primary-dark-color;
+    margin-bottom: 18px;
+    text-align: center;
+    width: 370px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
 
   .contact__text {
     @include font-set(13px, 1.583);
@@ -232,14 +234,15 @@ input:required:focus:invalid {
     text-align: left;
   }
 
-    .form__input {
-        width: 467px;
-  
+  .form__input {
+    width: 467px;
+
   }
+
   .form__btn {
     width: 467px;
   }
-  
+
   .politics {
     padding-left: 192px;
   }
@@ -248,113 +251,110 @@ input:required:focus:invalid {
 
 @media (min-width: 1200px) {
 
-    .header{
+  .header {
+    background-image: url(../images/header/BgheaderDecstop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 92px;
+  }
 
-        background-image: url(../images/header/BgheaderDecstop.png);
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+  .container_header {
+    width: 1170px;
+    padding-left: 15px;
+  }
 
-    .container_header {
-        width: 1170px;
-        padding-left: 15px;
-      }
+  .header__main-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .header__main-wrapper{
-        display: flex;
-        justify-content: space-between;
-    }
+  .logotype {
+    margin-bottom: 65px;
+  }
 
-    .logotype{
-        margin-bottom: 65px;
-    }
+  .header__wrapper {
+    width: 640px;
+  }
 
-    .header__wrapper{
-        width: 640px;
-    }
+  .header__form-wrapper {
+    width: 462px;
+    padding: 40px 20px 50px 34px;
+    margin-bottom: 14px;
+  }
 
-    .header__form-wrapper{
-        width: 462px;
-        padding: 40px 20px 50px 34px;
-    }
+  .header__text {
+    @include font-set(20px, 1.5);
+    margin-bottom: 38px;
+    letter-spacing: -1px;
 
-    .header__text {
-        @include font-set(20px, 1.5);
-        margin-bottom: 38px;
-        letter-spacing: -1px;
-    
-      }
+  }
 
-    .header__title {
-        @include font-set(60px, 1.167);
-        margin-bottom: 38px;
-        letter-spacing: -3px;
+  .header__title {
+    @include font-set(60px, 1.167);
+    margin-bottom: 38px;
+    letter-spacing: -3px;
 
-    }
+  }
 
-    .header__main-text{
-        @include font-set(35px, 1.28);
-        letter-spacing: 0;
-        margin-bottom: 44px;
-    }
+  .header__main-text {
+    @include font-set(35px, 1.28);
+    letter-spacing: 0;
+    margin-bottom: 44px;
+  }
 
-    .header__meet-text{
-        @include font-set(29px, 1.2);
-        margin-bottom: 18px;
-    }
+  .header__meet-text {
+    @include font-set(29px, 1.2);
+    margin-bottom: 18px;
+  }
 
-    .header__adress-text{
-        @include font-set(54px, 1.2);
-    }
+  .header__adress-text {
+    @include font-set(54px, 1.2);
+  }
 
-    .contact__wrapper{
-        width: auto;
-    }
+  .contact__wrapper {
+    width: auto;
+  }
 
-    .contact__title {
-        @include font-set(35px, 1.2);
-        margin: 0;
-        width: auto;
-        text-align: left;
-        margin-bottom: 24px;
-    }
+  .contact__title {
+    @include font-set(35px, 1.2);
+    margin: 0;
+    width: auto;
+    text-align: left;
+    margin-bottom: 24px;
+  }
 
-    .contact__text{
-        @include font-set(18px, 1.566);
-        letter-spacing: 0;
-        margin-bottom: 34px;
-        
-    }
-    .form__div{
-        height: 256px;
-        margin-bottom: 40px;
-    }
+  .contact__text {
+    @include font-set(18px, 1.566);
+    letter-spacing: 0;
+    margin-bottom: 34px;
 
-    .form__input{
-        @include font-set(18px, 1.2);
-        width: 100%;
-        height: 60px;
-    }
+  }
 
-    .form__btn{
-        @include font-set(22px, 1.2);
-        width: 100%;
-        height: 60px;
-        
-    }
-    .politics{
-        @include font-set(16px, 1.2);
-        padding-left: 818px;
+  .form__div {
+    height: 256px;
+    margin-bottom: 40px;
+  }
 
-    }
+  .form__input {
+    @include font-set(18px, 1.2);
+    width: 100%;
+    height: 60px;
+  }
+
+  .form__btn {
+    @include font-set(22px, 1.2);
+    width: 100%;
+    height: 60px;
+
+  }
+
+  .politics {
+    @include font-set(16px, 1.2);
+    padding-left: 818px;
+
+  }
 
 
 
-      
+
 }
-  
-
-   
-  
-
-  

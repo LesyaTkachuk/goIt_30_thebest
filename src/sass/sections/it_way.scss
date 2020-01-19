@@ -66,11 +66,10 @@
 }
 
 .it-way__button {
+  @extend %button;
   @include font-set(14px, 1.2);
-  color: $primary-white-color;
   text-align: center;
   font-weight: bold;
-  background-color: $main-orange-color;
   width: 260px;
   height: 70px;
   border-width: 0;
@@ -80,7 +79,7 @@
 
 
 @media (min-width:768px) {
-  .container {
+  .container--it-way {
     width: 625px;
   }
 
@@ -136,7 +135,7 @@
 }
 
 @media (min-width:1200px) {
-  .container {
+  .container--it-way {
     width: 1170px;
     margin: 0 auto;
   }
