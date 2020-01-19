@@ -1,9 +1,18 @@
 .it-way-bg-image {
-  background-image: url(../images/it_way/it_way@2x.png);
+  background-image: url(../images/it_way/it_way.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background-image: url(../images/it_way/it_way@2x.png);
+
+  }
+
+
 }
+
 
 .it-way__text {
   @include font-set(16px, 1.25);
@@ -76,8 +85,16 @@
   }
 
   .it-way-bg-image {
-    background-image: url(../images/it_way/it_way_tabletka@2x.png);
+    background-image: url(../images/it_way/it_way_tabletka.png);
+
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url(../images/it_way/it_way_tabletka@2x.png);
+
+    }
   }
+
 
   .it-way {
     padding-top: 55px;
@@ -125,8 +142,15 @@
   }
 
   .it-way-bg-image {
-    background-image: url(../images/it_way/it_way_DT@2x.png);
+    background-image: url(../images/it_way/it_way_DT.png);
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url(../images/it_way/it_way_DT@2x.png);
+
+    }
   }
+
 
   .it-way {
     padding-top: 45px;
