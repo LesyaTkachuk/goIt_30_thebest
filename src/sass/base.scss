@@ -31,12 +31,24 @@ body {
   }
 }
 
-@media (min-width:1350px) {
+@media (min-width:1200px) {
   .container {
-    width: 1350px;
+    width: 1170px;
   }
 }
 
 .list {
   list-style: none;
+}
+
+.section__title {
+  @include font-set(20px, 1.5);
+  letter-spacing: -0.8px;
+  font-weight: 900;
+}
+
+.section__subtitle {
+  @include font-set(14px, 1.43);
+  letter-spacing: -0.8px;
+  font-weight: 900;
 }
