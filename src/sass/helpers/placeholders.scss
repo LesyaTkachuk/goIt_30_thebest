@@ -24,11 +24,9 @@
 }
 
 %pseudo-before {
-  content: '&#91;';
-  display: block;
+  content: '\005B';
 }
 
 %pseudo-after {
-  content: '&#93;';
-  display: block;
+  content: '\005D';
 }

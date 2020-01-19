@@ -1,0 +1,135 @@
+.container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.questions {
+  padding-top: 28px;
+  padding-bottom: 38px;
+}
+
+.questions__title {
+  @include font-set(20px, 1.5);
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: -0.7px;
+  margin-bottom: 14px;
+  color: $primary-dark-color;
+}
+
+.questions__title::before {
+  @extend %pseudo-before;
+  padding-right: 8px;
+}
+
+.questions__title::after {
+  @extend %pseudo-after;
+}
+
+.list__wrapper {
+  width: 260px;
+}
+
+.questions__list-items {
+  @include font-set(14px, 1.49);
+  color: $primary-dark-color;
+  text-align: left;
+  position: relative;
+  margin-left: 41px;
+  margin-bottom: 10px;
+}
+
+.questions__list-items::before {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: -38px;
+  content: '';
+  background-image: url(../images/questions/arrow.png);
+  background-size: cover;
+  height: 10px;
+  width: 18px;
+
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+@media (min-width:768px) {
+  .container {
+    width: 618px;
+  }
+
+  .list__wrapper {
+    width: 618px;
+  }
+
+  .questions__title {
+    @include font-set(30px, 1.333);
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    margin-bottom: 24px;
+
+  }
+
+  .questions {
+    padding-top: 48px;
+    padding-bottom: 55px;
+  }
+
+  .questions__title::before {
+    padding-right: 8px;
+  }
+
+  .questions__title::after {
+    content: '_  \005D';
+  }
+
+  .questions__list-items:first-child {
+    width: 448px;
+  }
+
+  .questions__list-items {
+    @include font-set(16px, 1.375);
+    margin-bottom: 12px;
+  }
+
+}
+
+@media (min-width:1350px) {
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+
+  .questions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list__wrapper {
+    width: 520px;
+    margin-top: 88px;
+  }
+
+  .questions__title {
+    @include font-set(48px, 1.25);
+    letter-spacing: -2.4px;
+    padding-top: 78px;
+    margin-bottom: 14px;
+    width: 488px;
+  }
+
+  .questions__list-items:first-child {
+    width: 533px;
+  }
+
+  .questions__list-items {
+    @include font-set(18px, 1.667);
+    margin-bottom: 20px;
+  }
+
+}

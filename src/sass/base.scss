@@ -40,3 +40,41 @@ body {
 .list {
   list-style: none;
 }
+
+.section__title {
+  @include font-set(20px, 1.5);
+  letter-spacing: -0.8px;
+  font-weight: 900;
+
+  &::before {
+    @extend %pseudo-before;
+    margin-right: 6px;
+  }
+
+  &::after {
+    @extend %pseudo-after;
+    margin-left: 6px;
+  }
+}
+
+.section__title {
+  @include font-set(20px, 1.5);
+  letter-spacing: -0.8px;
+  font-weight: 900;
+
+  &::before {
+    @extend %pseudo-before;
+    margin-right: 6px;
+  }
+
+  &::after {
+    @extend %pseudo-after;
+    margin-left: 6px;
+  }
+}
+
+.section__subtitle {
+  @include font-set(14px, 1.43);
+  letter-spacing: -0.8px;
+  font-weight: 900;
+}
