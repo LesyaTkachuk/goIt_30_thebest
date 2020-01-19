@@ -20,7 +20,7 @@
   &__subtitle {
     display: inline-block;
     background-color: rgb(237, 240, 242);
-    margin: 0px 0px 25px 75px;
+    margin: 0px 0px 25px 0px;
     // padding-left: 70px;
 
     @include font-set(16px, 1.4);
@@ -211,6 +211,15 @@
 
 
 .partner {
+  &__subtitle {
+    margin-left: 0;
+    display: inline-block;
+    background-color: rgb(237, 240, 242);
+    margin: 0px 0px 25px 0px;
+    @include font-set(16px, 1.4);
+    font-weight: 900;
+  }
+
   &__list {
     display: flex;
     min-height: 296px;
