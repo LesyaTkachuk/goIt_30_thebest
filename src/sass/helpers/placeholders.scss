@@ -12,15 +12,9 @@
   text-decoration: none;
 }
 
-%background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 %pseudo {
   content: '';
-  display: block;
+  display: inline-block;
 }
 
 %pseudo-before {
