@@ -51,11 +51,19 @@
 }
 
 .header__adress-text {
+  display: block;
   @include font-set(20px, 1.2);
   color: $secondary--color-sand;
   font-weight: bold;
   letter-spacing: -0.8px;
   margin-bottom: 18px;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary--color-aqua;
+    text-decoration: underline;
+    transition:  400ms linear;
+  }
 
 }
 
