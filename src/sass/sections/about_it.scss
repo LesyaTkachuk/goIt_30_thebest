@@ -28,6 +28,7 @@
     @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
       background-image: url(../images/about_it/map_for_mobile@2x.png);
+      background-size: 272px 193px;
     }
   }
 
@@ -159,6 +160,7 @@
       @media (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi) {
         background-image: url(../images/about_it/map_for_tablet@2x.png);
+        background-size: 311px 193px;
       }
 
       @media (min-width:768px)and(max-width:1199px) {
